@@ -37,11 +37,11 @@ Un point $(x,y)$ est à l'intérieur du cercle si $\sqrt{x^{2} + y^{2}} \leq 1$.
 
 Si nous générons $N$ points au total et que $M$ d'entre eux se trouvent à l'intérieur du cercle, alors le rapport des points à l'intérieur du cercle par rapport au total des points nous donne une estimation de l'aire du cercle par rapport à celle du carré :
 
-<center>
 
- $$ \frac{M}{N} \approx \frac{\text{ Aire du cercle }}{\text{ Aire du carré }} = \frac{\pi}{4} $$
 
-</center>
+$$\frac{M}{N} \approx \frac{\text{ Aire du cercle }}{\text{ Aire du carré }} = \frac{\pi}{4}$$
+
+
 
 En arrangeant cette formule, on peut estimer $\pi \approx 4 \times \frac{M}{N}$.
 
