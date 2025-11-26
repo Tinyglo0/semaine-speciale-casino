@@ -35,6 +35,7 @@ exclude_docs: |
 # Configuration du thème:
 theme:
   name: pyodide-mkdocs-theme
+  favicon: https://www.gymnase-etoy.ch/favicon.ico
   palette:
     primary: blue
   logo: /assets/logo-gnetoy.png
