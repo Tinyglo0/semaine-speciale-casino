@@ -1,0 +1,171 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<style>
+    :root {
+        --wtf-primary-color: #3f0649;
+        --wtf-dark-text-color: #777777;
+    }
+
+    .md-header {
+        position: initial
+    }
+
+    .md-main__inner {
+        margin: 0
+    }
+
+    .md-content {
+        display: none
+    }
+
+    .tx-container {
+        padding-top: 1rem;
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: white' /></svg>") no-repeat bottom, linear-gradient(to bottom, var(--md-primary-fg-color), var(--wtf-primary-color) 99%, #fff 99%)
+    }
+
+    .tx-hero {
+        margin: 0 .8rem;
+        color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700;
+        max-width: 35rem;
+    }
+
+    /* .tx-hero__content {
+        
+    } */
+
+    .boutons .md-button {
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-bg-color)
+    }
+
+    .boutons .md-button--primary {
+        background-color: var(--md-primary-bg-color);
+        color: var(--wtf-primary-color);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .boutons .md-button:focus,
+    .boutons .md-button:hover {
+        background-color: var(--md-accent-fg-color);
+        color: var(--md-default-bg-color);
+        border-color: var(--md-accent-fg-color)
+    }
+    .boutons {
+        padding-bottom: 11rem;
+    }
+
+    @media screen and (max-width:70em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+
+        .tx-hero__image {
+            text-align: center;
+        }
+
+        .tx-hero__image img {
+            max-width: 15rem;
+        }
+    }
+
+    @media screen and (min-width:70em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: stretch
+        }
+
+        .tx-hero__content {
+            /* max-width: 30rem; */
+            flex: 1;
+            margin-top: 3.5rem;
+            /* padding-bottom: 14vw */
+        }
+
+        .tx-hero__image {
+            order: 1;
+            margin-left: auto;
+            margin-top: 3.0rem;
+        }
+
+        .tx-hero__image img {
+            max-width: 20rem;
+        }
+        .tx-hero__content p {
+            max-width: 35rem; /* Le texte reste compact pour la lecture */
+        }
+}
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+
+        .tx-hero__image {
+            margin-left: auto;
+        }
+
+        .tx-hero__image img {
+            max-width: 20rem;
+        }
+    }
+</style>
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+        <div class="tx-hero">
+            <div class="tx-hero__image">
+                <img src="/assets/Untitled.png" alt="" draggable="false">
+            </div>
+            <div class="tx-hero__content">
+                <h1>Bienvenue sur le site consacré à la semaine spéciale sur le casino des mathématiques !</h1>
+                <p>
+                   Alors que leurs jeux se basent sur le hasard, pourquoi les casinos font-ils toujours un bénéfice en fin de journée ? Les mathématiques peuvent-elles nous éclairer sur la question ? Et nous permettre de trouver des stratégies optimales ? Peut-être même une façon de dompter l’aléatoire ?
+                </p>
+                <p>
+Nous vous proposons différents ateliers afin d’étudier les mécanismes élémentaires qui régissent l’aléatoire, au travers d’expériences et de simulations informatiques. Nous analyserons des jeux classiques de casino : Black-Jack, Roulette, Craps, Poker et discuterons des stratégies qui pourraient nous permettre d’optimiser nos gains.
+                <p>
+Les ateliers nous donneront l’occasion d’alterner entre des discussions théoriques, de la programmation et des phases de jeu un peu plus ludiques (il va bien falloir tester les stratégies développées !). Vous aurez l’occasion d’analyser en détail un jeu de hasard en particulier, de l’analyser sous tous ses angles, d’en découvrir tous les secrets et peut-être d’y devenir imbattables… ? 
+                </p>
+                <p>
+                    <strong>Cliquez sur les activités ci-dessous pour coder en Python.</strong>
+                </p>
+            </div>
+                            
+        </div>
+            <div class="boutons">
+                    <a href="/monte-carlo"
+                    class="md-button md-button">
+                    Activité Monte-Carlo
+                </a>
+                <a href="#" class="md-button">
+                    Activité Lancé de dés
+                </a>
+                <a href="roulette" class="md-button">
+                    Activité Roulette
+                </a>
+                <a href="#" class="md-button">
+                    Activité Blackjack
+                </a> 
+            </div>
+
+    </div>
+</section>
+<section>
+    <div class="md-grid md-typeset">
+        <div class="tx-hero">
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block content %}{% endblock %}
