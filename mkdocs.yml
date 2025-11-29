@@ -134,6 +134,11 @@ markdown_extensions:
 validation:
   omitted_files: warn
   unrecognized_links: warn
+extra_css:
+  - https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css
 
-# extra_javascript:
+extra_javascript:
 #   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/react@18/umd/react.production.min.js
+  - https://unpkg.com/react-dom@18/umd/react-dom.production.min.js
+  - javascripts/blackjack-standalone.js
