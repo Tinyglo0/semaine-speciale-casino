@@ -81,7 +81,7 @@ plugins:
 # - exclude-search:         # APRÈS le plugin search (pip install mkdocs-exclude-search)
 #     exclude:              # Pour les fichiers inclus dans le build, que la recherche ne doit pas indexer
 #       - bac_a_sable.md
-
+  - include-markdown
 
 
 markdown_extensions:
@@ -136,9 +136,13 @@ validation:
   unrecognized_links: warn
 extra_css:
   - https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css
+  - assets/roulette.css
 
 extra_javascript:
 #   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/react@18/umd/react.production.min.js
   - https://unpkg.com/react-dom@18/umd/react-dom.production.min.js
   - javascripts/blackjack-standalone.js
+  - javascripts/roulette-standalone.js
+  - javascripts/roulette-guide-standalone.js
+
