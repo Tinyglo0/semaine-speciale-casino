@@ -40,7 +40,8 @@ theme:
     primary: blue
   logo: /assets/logo-gnetoy.png
   custom_dir: overrides  
-# features:
+  features:
+    - navigation.path
 #   - navigation.instant    # Ne surtout pas activer cette option !
 
 
@@ -81,7 +82,7 @@ plugins:
 # - exclude-search:         # APRÈS le plugin search (pip install mkdocs-exclude-search)
 #     exclude:              # Pour les fichiers inclus dans le build, que la recherche ne doit pas indexer
 #       - bac_a_sable.md
-  - include-markdown
+  # - include-markdown
 
 
 markdown_extensions:
