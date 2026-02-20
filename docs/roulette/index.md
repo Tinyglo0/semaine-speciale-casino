@@ -18,7 +18,7 @@ La mise remportée diffère en fonction des combinaisons.
     <div id="roulette-guide"></div>
 
 ???+ tip "Voici un exemple de roulette :" 
-    <div id="roulette-game" style="min-height: 600px;"></div>
+    <div id="roulette-game" style="min-height: 700px;"></div>
 
 
 Dans cette activité, vous allez programmer une simulation simplifiée d’une roulette où :
