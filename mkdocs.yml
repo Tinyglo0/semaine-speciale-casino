@@ -15,8 +15,7 @@ copyright: |
 docs_dir: docs
 
 nav:
-  - "Accueil": index.md
-# - ...
+  - "Générateur de graphique en python": index.md
 
 # Pour supprimer certains fichiers markdown de la navigation (pattern shell):
 # not_in_nav: |
@@ -54,6 +53,9 @@ plugins:
   - search
 
   - pyodide_macros:         # !!REQUIS!!
+      project:
+        id: "semaine-speciale-casino"
+        disambiguate_local_storage: false 
       build:
         python_libs:
           - turtle
