@@ -149,4 +149,5 @@ extra_javascript:
   - javascripts/blackjack-standalone.js
   - javascripts/roulette-standalone.js
   - javascripts/roulette-guide-standalone.js
+  - javascripts/craps-standalone.js
 
