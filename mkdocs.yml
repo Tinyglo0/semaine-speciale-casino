@@ -85,6 +85,7 @@ plugins:
 #     exclude:              # Pour les fichiers inclus dans le build, que la recherche ne doit pas indexer
 #       - bac_a_sable.md
   # - include-markdown
+  - mkdocs-pdf
 
 
 markdown_extensions:

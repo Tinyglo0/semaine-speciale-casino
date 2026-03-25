@@ -269,7 +269,7 @@
     return React.createElement('div', {
       style: {
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        backgroundColor: '#ffffff', // 1e272e
+        backgroundColor: '#1e272e', // 1e272e
         color: '#d2dae2',
         display: 'flex',
         flexDirection: 'column',
@@ -280,7 +280,7 @@
     },
       React.createElement('h1', {
         style: {
-          color: '#000000', // 0fbcf9
+          color: '#ffffff', // 0fbcf9
           marginBottom: '5px'
         }
       }, 'Table de Craps (Avancée)'),
