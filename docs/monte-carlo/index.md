@@ -91,6 +91,40 @@ principal.
 
     4.  Calcul de l'estimation de $\pi$ et affichage du résultat dans la console python.
 
+    ??? example "Logigramme du programme"
+        ```mermaid
+            flowchart TD
+            A([Début du programme]) --> B[Initialisation :<br>rayon=180,<br>total=2500, total_interieur=0]
+            
+            B --> C[Appel : dessiner_carre]
+            C --> D[Appel : dessiner_cercle]
+            
+            D --> E{Boucle : Pour chaque point<br>de 1 à 2500}
+            
+            E -- Point suivant --> F[Générer des coordonnées aléatoires]
+            F["Générer des coordonnées aléatoires<br>pour x et y"] --> G["Calculer la distance euclidienne"]
+            G --> H{"Le point est-il dans le cercle ?<br>(distance < rayon)"}
+            
+            H -- Oui --> I[couleur = Rouge<br>Incrémenter total_interieur de 1]
+            H{"Le point est-il dans le cercle ?"} -- Non --> J[couleur = Bleu]
+            
+            I["couleur = Rouge<br>Incrémenter total_interieur de 1"] --> K[Appel : dessiner_points<br>avec la couleur définie]
+            J --> K
+            
+            K --> E
+            
+            E -- Boucle terminée --> L[Mettre à jour l'affichage graphique]
+            L --> M["Calculer l'estimation de pi"]
+            M --> N[Afficher le résultat de l'estimation dans la console]
+            N --> O([Fin du programme])
+
+            %% Styles optionnels pour rendre le diagramme plus lisible
+            style A fill:#4CAF50,stroke:#388E3C,stroke-width:2px,color:white
+            style O fill:#F44336,stroke:#D32F2F,stroke-width:2px,color:white
+            style E fill:#FF9800,stroke:#F57C00,stroke-width:2px,color:white
+            style H fill:#FF9800,stroke:#F57C00,stroke-width:2px,color:white
+        ```
+
 {{ IDE('python/exo') }}
 
 {{ figure(admo_title="Résultat de programme") }}
