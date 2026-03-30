@@ -16,6 +16,7 @@ hide:
 
 ??? abstract "Activité Monte Carlo"
     ![Activité Monte Carlo](./Activité_Monte_Carlo.pdf){ type=application/pdf style="min-height:75vh;width:100%" }
-<!-- ??? abstract "Classement des différentes mains au Poker"
-    ![Classement des mains au Poker](./differentes-mains-poker.pdf){ type=application/pdf style="min-height:75vh;width:100%" } -->
+
+??? abstract "Classement des différentes mains au Poker"
+    ![Classement des mains au Poker](./differentes-mains-poker.pdf){ type=application/pdf style="min-height:75vh;width:100%" }
 
