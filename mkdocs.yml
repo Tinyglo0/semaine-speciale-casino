@@ -1,7 +1,7 @@
 # Voici un exemple presque complet de configuration pour un fichier
 # mkdocs.yml utilisant pyodide-mkdocs-theme.
 
-site_url: "http://semaine-speciale-casino.pages.dev"
+site_url: "https://semaine-speciale-casino.pages.dev"
 site_name: "Semaine spéciale - Casino des mathématiques"
 # site_description: "(optionnel)"
 # repo_url: "(optionnel)"
